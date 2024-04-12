@@ -73,10 +73,12 @@ h1 {
 }
 
 #txtBanner {
-    font-size: 1.3rem; 
-    line-height: 1.5rem; 
+    font-size: 1.4rem; 
+    line-height: 1.7rem; 
     color: #00A388;
     text-align: justify;
+    margin: 0 auto;
+    max-width: 50rem;
 }
 
 .btnBanner {
@@ -86,7 +88,7 @@ h1 {
     border-radius: 20px;
     text-decoration: none;
     display: inline-block; 
-    margin-top: 1rem; 
+    margin-top: 1rem;
 }
 
 .services {
@@ -103,14 +105,14 @@ h1 {
     width: 90%;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .boxS {
     padding: 2rem;
     margin: 1rem; 
-    flex: 1 0 300px; 
+    flex: 1 0 300px;
     box-shadow: 0px 0px 55px 5px rgba(0, 0, 255, 0.2);
     border-radius: 10px;
 }
@@ -154,7 +156,7 @@ section.equipo {
 .boxE {
     padding: 2rem;
     margin: 1rem; 
-    flex: 1 0 300px;
+    flex: 1 0 300px; 
     box-shadow: 0px 0px 5px 5px rgba(0, 255, 0, 0.2);
     border-radius: 10px;
 }
@@ -198,7 +200,7 @@ h1 {
     width: 90%;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: center;
 }
 
@@ -334,15 +336,16 @@ button[type="submit"]:hover {
 
 .menu li:hover {
     color: #FF6138;
+
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .containerE.row {
         display: flex;
         flex-direction: column;
     }
 
-    .boxB.col2 {
+    .boxB.col12 {
         width: 100%; 
     }
 }
