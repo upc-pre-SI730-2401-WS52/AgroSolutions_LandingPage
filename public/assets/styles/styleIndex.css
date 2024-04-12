@@ -2,7 +2,6 @@ body {
     font-family: Geneva, Arial, sans-serif; 
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -45,44 +44,39 @@ nav ul li a {
 section.banner {
     background: linear-gradient(to left,#FFFF9D , #79BD8F);
     padding: 3rem 0;
+    text-align: center;
 }
 
 .containerB {
-    width: 90%; 
+    width: 100%; 
     margin: 0 auto; 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 2rem;
-}
-
-.col1 {
     display: flex;
-    align-items: center; 
+    flex-wrap: wrap; 
     justify-content: center;
+    align-items: center;
 }
 
-.imgBanner {
-    width: 70%;
+.col1, .col2 {
+    flex: 1;
+    padding: 1rem;
 }
 
-.col2 {
-    padding: 1rem 2rem; 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.col1 img {
+    width: 100%;
+    max-width: 400px; 
 }
 
 h1 {
     color: #FF6138;
     font-size: 2rem; 
+    margin-bottom: 1rem; 
 }
 
 #txtBanner {
-    margin: 2rem 0; 
     font-size: 1.3rem; 
-    line-height: 2rem; 
-    text-align: justify;
+    line-height: 1.5rem; 
     color: #00A388;
+    text-align: justify;
 }
 
 .btnBanner {
@@ -91,6 +85,8 @@ h1 {
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
+    display: inline-block; 
+    margin-top: 1rem; 
 }
 
 .services {
@@ -99,7 +95,6 @@ h1 {
 }
 
 .subServices {
-    text-align: center;
     padding-bottom: 3rem;
     color: #0074E4;
 }
@@ -107,23 +102,21 @@ h1 {
 .containerS {
     width: 90%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 3rem;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
 .boxS {
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 1rem; 
+    flex: 1 0 300px; 
     box-shadow: 0px 0px 55px 5px rgba(0, 0, 255, 0.2);
     border-radius: 10px;
 }
 
 .boxS img {
-    width: 300px; 
+    max-width: 100%; 
     margin-bottom: 1rem; 
 }
 
@@ -134,7 +127,6 @@ h3 {
 }
 
 .boxS p {
-    text-align: justify; 
     font-size: 1rem; 
 }
 
@@ -145,33 +137,31 @@ h3 {
 }
 
 section.equipo {
-    background: linear-gradient(to left, #FFFFFF, #00576F); 
+    background: linear-gradient(to right, #79BD8F, #BEEB9F);
     padding: 3rem 0; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
+    text-align: center;
 }
 
 .containerE {
-    width: 90%; 
-    margin: 0 auto; 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
-    grid-gap: 2rem; 
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
 }
 
 .boxE {
-    padding: 1rem 2rem; 
-    display: flex;
-    justify-content: center; 
-    flex-direction: column; 
-    text-align: center; 
-    box-shadow: 0px 0px 55px 5px rgba(0, 255, 0, 0.2);
+    padding: 2rem;
+    margin: 1rem; 
+    flex: 1 0 300px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 255, 0, 0.2);
+    border-radius: 10px;
 }
 
 .imgEquipo {
-    width: 70%; 
-    align-self: center; 
+    max-width: 100%;
+    height: auto;
 }
 
 h1 {
@@ -183,11 +173,9 @@ h1 {
 #txtEquipo {
     margin: 2rem 0; 
     font-size: 1.3rem; 
-    line-height: 2rem; 
+    line-height: 1.5rem; 
     text-align: justify; 
 }
-
-
 
 .Tarifas {
     padding: 3rem 0; 
@@ -200,28 +188,26 @@ h1 {
     margin-bottom: 1.5rem; 
 }
 
-
 .subTarifas p {
-    text-align: center; 
     color: #FFFFFF;
     font-size: 1rem; 
     margin-bottom: 3rem; 
-    max-width: 800px; 
-    margin-left: auto; 
-    margin-right: auto;
 }
 
 .containerT {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .boxT {
     background-color: #FFFFFF;
     border-radius: 10px;
     padding: 2rem;
-    width: 30%;
+    margin: 1rem; 
+    flex: 1 0 300px; 
     box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.1);
 }
 
@@ -247,16 +233,10 @@ h1 {
     margin-bottom: 0.5rem;  
 }
 
-
-
-
- 
 .contact {
-    background-color: #FFFFFF;  
     padding: 3rem 0; 
     text-align: center; 
 }
-
 
 .contact-container {
     background-color: #00A388;
@@ -316,6 +296,7 @@ button[type="submit"]:hover {
     color: #008000;
     margin-top: 10px;
 }
+
 .nav-buttons {
     list-style-type: none;
     margin: 0;
@@ -340,4 +321,87 @@ button[type="submit"]:hover {
 
 .nav-buttons li a:hover {
     background-color: #555;
+}
+
+.menu-toggle {
+    position: absolute; 
+    
+}
+
+.menu {
+    opacity: 0;
+}
+
+.menu li:hover {
+    color: #FF6138;
+}
+
+@media (max-width: 900px) {
+    .containerE.row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boxB.col2 {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 900px) {
+    .menu {
+        position: absolute;
+        left: 0;
+        top: calc(100%);
+        transform: translateY(-10px);
+        opacity: 0;
+        background-color: #FFFF9D ;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 10px 0;
+        width: 150px;
+        transition: transform 0.3s ease, opacity 0.3s ease 0.1s;
+    }
+
+    .menu.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .menu li {
+        padding: 10px 0;
+        text-align: center;
+        border-bottom: 1px solid #BEEB9F ;
+    }
+
+    .menu li:last-child {
+        border-bottom: none;
+    }
+
+    .menu li a {
+        color: #00A388 ;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    .menu li a:hover {
+        color: #FF6138;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 20px;
+        color: #FFF;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    .menu-toggle:focus {
+        outline: none;
+    }
 }
