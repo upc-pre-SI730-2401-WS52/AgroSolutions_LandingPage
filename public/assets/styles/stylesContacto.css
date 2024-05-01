@@ -328,16 +328,7 @@ button[type="submit"]:hover {
 .menu-toggle {
     position: absolute; 
     
-}
-
-.menu {
-   
-}
-
-.menu li:hover {
-    
-
-}
+}   
 
 @media (max-width: 1100px) {
     .containerE.row {

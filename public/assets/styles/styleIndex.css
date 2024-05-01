@@ -330,15 +330,6 @@ button[type="submit"]:hover {
     
 }
 
-.menu {
-   
-}
-
-.menu li:hover {
-    
-
-}
-
 @media (max-width: 1100px) {
     .containerE.row {
         display: flex;
